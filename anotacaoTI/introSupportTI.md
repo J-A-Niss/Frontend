@@ -36,4 +36,26 @@
 
 - Portas ou circuitos lógicos são dispositivos que operam e trabalham com um ou mais sinais lógicos de entrada para produzir uma e somente uma saída e são geralmente usadas em circuitos eletrônicos, por causa das situações que os sinais deste tipo de circuito podem apresentar: presença de sinal, ou "1"; e ausência de sinal, ou "0".   
 
-- Em suma, é um circuito que recebe dois sinais, com uma condição de saída específica.
+- Em suma, é um circuito que recebe dois sinais, com uma condição de saída específica.   
+
+## Abstração   
+
+- Abstração esconde complexidade por tras de uma interface comun e é usado na computação para fazer problemas complexos se tornarem mais digeríveis sendo que o usuário não sabe nem precisa, necessariamente, saber o que acontece "debaixo do capô".    
+
+- Isso é feito dividindo os problemas em tarefas singulares e conceitos mais simples que podem então serem empilhados em camadas e solucionados um a um. 
+
+## Camadas do Computador   
+
+- Dividido em 4 camadas:    
+
+1. Hardware
+    - Os componentes físico do computador em si; do gabinete ao teclado.   
+
+2. Sistema Operacional
+    - É o que permite o hardware de que se comunicar com o sistema; peças são feitas por diversos fabricantes e o sistema operacional permite que voce use essas peças independente de onde vieram.    
+
+3. Software
+    - Como o usuário interage com o computador, pode ser um browser web, processador de texto, aplicativo etc.   
+
+4. Usuário
+    - O usuário do sistema, e interagir com o usuário é a maior parte do trabalho de TI além da parte técnica
