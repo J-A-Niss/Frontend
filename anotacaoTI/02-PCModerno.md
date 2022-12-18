@@ -2,9 +2,14 @@
 
 - O computador moderno apesar de mudar de forma não muda estruturalmente, ou seja, entender o processo de como os componentes se comunicam e se comportam é crucial pra compreender como funciona o computador no geral, tendo o Comp. Mod. 3 formas mais populares:
 
-1. Desktop   
+1. Desktop
+    - O computador moderno, chamado Desktop por ser colocado em cima da mesa. Normalmente caracterizado por uma torra(gabinete ou *case*).    
 
-- O computador moderno, chamado Desktop por ser colocado em cima da mesa e tende a ser o mais .    
+2. Notebook (computador portátil ou laptop)
+    - Computador portátil, projetado com intuito de ser mais leve e transportável podendo ser usado em diferentes locais com mais facilidade. Essa portabilidade vem com o custo de ser potencialmente menos potente que um desktop   
+
+3. Smartphone (*espertofone*)
+    - A pesar de poder ser classificado com telefone móvel, possui todas características de um computador, com processador, memorias tanto volátil como não-volatil e acesso a internet por meio de wi-fi.    
 
 ### Port(Porta)    
 
