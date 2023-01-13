@@ -61,4 +61,6 @@
 
 - Linguagens interpretadas não são compiladas antes. Um arquivo que tem código escrito em uma dessas linguagens é chamado de script. O script é executado por um *interpretador* que entende e converte o código à instrução da CPU quando for executado.   
 
+### Automação   
 
+- Arte de terceirizar o trabalho pesado pro software, normalmente com scripts que fazem determinada tarefa por voce.
