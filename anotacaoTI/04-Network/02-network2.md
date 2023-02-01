@@ -46,15 +46,15 @@
 
 - Subdividem em duas categorias, cobre e fibra;    
 
-1. Cobre
+1. **Cobre**
     - O dispositivo emissor comunica dados binários através desses fios de cobre alterando a tensão entre duas faixas. O sistema da extremidade receptora consegue interpretear essas mudanças de tensão em 0s e 1s, os quais são traduzidos para várias formas de dados.
     - As categorias mais comuns são a *Cat5, Cat5e e Cat6 (categoria 5, 6)* e as categorias diferem na quantiadade de tranças que resultam em tamanho e velocidade de transmissão diferentes. Categorias mais novas substituem mais antigas por solucionarem problemas ocorrentes, como *Crosstalk, onde um pulso de um fio é acidentalmente detectado por outro.*
     - O tipo mais comun de cabo é o conhecido como *par trançado*, na qual pares de fios de cobre são trançados e esses pares agem como um conduíte unico de informação, a fim de evitar interferençias eletromagnéticas e *crosstalk*. No caso de um Cat6, existem 8 fios, formando 4 pares trançados dentro de uma unica capa. Isso permite que ocorra **comunicação duplex, na qual informação pode fluir pelo cabo em ambas direções.** Isso se da por meio de reservação dos pares de se comunicarem em uma direção e o outro par na outra. Em contrapartida, uma **comunicação simplex é informação enviada em uma unica direção, como por exemplo em uma babá eletrônica.**      
 
-2. Fibra Ótica
+2. **Fibra Ótica**
     - Tubo de vidro da espessura de aprox. um fio de cabelo. Diferente de cobre que usa tensão elétrica, estes tubos transportam pulsos de luz, que são identificados similarmente como 1s e 0s. Muito usados em locais com bastante interferencia eletro-magnética que pode impactar o pulso elétrico do cabo de cobre e podem transmitir dado ***mais rápido e mais longe apesar de serem muito mais caros e frágeis***     
 
-#### [Cabo de ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair)    
+### [Cabo de ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair)    
 
 
 ## Porta    
@@ -73,7 +73,7 @@
 
 - Com intuito de evitar a colisão foi criada uma técnica, por meio do protocolo de ethernet chamada **Carrier Sense Multiple Access with Collision Detection** conhecido como
 **CSMA/CD**
-### Carrier Sense Multiple Access with Collision Detection ou [CSMA/CD](https://pt.wikipedia.org/wiki/CSMA/CD)    
+### [Carrier Sense Multiple Access with Collision Detection ou CSMA/CD](https://pt.wikipedia.org/wiki/CSMA/CD)    
 
 - Usado para determinar quando os canais de comunicação estão livres e quando o dispositivo pode transmitir dados. Se não houver dado sendo transmitido no segmento, o nó fica livre pra enviar. Se dois ou mais computadores tentam ao mesmo tempo, os computadores detectam a colisão e param, na qual cada dispositivo envolvido aguarda um tempo aleatório para tentar eviar novamente
 
@@ -83,7 +83,7 @@
 
     3. Collision Detection: É responsável por identificar colisões na rede.   
 
-### Swich   
+### Switch   
 
 - Alem de ter toda funcionalidade do Hub, consegue tambem inspecionar o conteúdo do dado de protocolo enviado pela rede para determinar para qual sistema deve ser enviado. Isso praticamente eliminan colisão de rede.   
 

@@ -60,18 +60,15 @@ cliente <---> website
 
 - Outra solução que conseguimos usar é a NAT, Network Address Translation, ou  tradução de endereços de rede. Com ela, as organizações podem usar um endereço IP público e vários privados dentro da rede.    
 
-#### Internet das Coisas (iot)    
+#### Internet das Coisas (internet of things/iot)    
 
 - Internet das coisas é um conceito que permite que mais dispositivos sejam conectados à Internet.    
 
 ## Privacidade e Segurança    
 
-- 
-     
 ### Networking   
 
 - Processo de design do network em si.   
-
 
 #### Network Stack   
 
