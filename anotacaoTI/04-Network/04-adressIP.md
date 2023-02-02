@@ -47,4 +47,10 @@ C      | 192-224   | 254       |
 
 ## Mascara de sub-rede  
 
-- Assim como o endereço de IP, mascaras de sub-rede são números de 32 bits normalmente gravados como quatro octetos em decimal
+- Assim como o endereço de IP, mascaras de sub-rede são números de 32 bits normalmente gravados como quatro octetos em decimal que possuem como objetivo trazer ainda mais especificidade aos endereços de IP, trazendo mais precisão     
+
+## CIDR (*classless inter-domain routing*)     
+
+- ***Roteamento entre Domínios sem Classe*** , basicamente amplia o conceito de sub-rede usando mascaras de sub-rede para demarcar redes, ***demarcar significando colocar em funcionamento*** dando luz ao termo *"ponto de demarcação"*
+    - Ponto de demarcação descrevendo onde uma rede/sistema termina e outro começa   
+- Basicamente o CIDR combina ID de rede E sub-rede, por meio de uma / ao final do endereço, por exemplo: *195.195.195.0/24*. Em um mundo onde a classe do endereço não importa, só se necessita da informação da mascara de rede para determinar o ID da rede. Ou seja, **essa pratica simplifica a forma que roteadores e outros dispositivos de rede vêem partes de um endereço de IP, como tambem viabiliza redes com tamanhos mais arbitrários.**
