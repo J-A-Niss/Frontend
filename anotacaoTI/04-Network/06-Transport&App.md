@@ -8,7 +8,7 @@
 
 - A '*plexação*' é feita através de **portas**; ***Portas sendo um número de 16 bits usado para direcionar tráfego para serviços específicos executados por um computador em rede.***   
 
-### [TCP - Transfer Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)  
+## [TCP - Transfer Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)  
 
 - Protocolo de comunicação da camada de transporte, cuja função é verificar se dados foram enviados na sequencia correta e sem erros, complementado pelo ***protocolo da internet ou IP***. Nesse protocolo se assentam a maioria das aplicações cibernéticas devido a sua versatilidade e robustez. O protocolo em si é subdividido em varias partes e é **altamente dependente de varias confirmações** isso para garantir que todos dados estejam sendo recebidos e o enviador não esta enviando dados desnecessários.    
 
@@ -41,11 +41,11 @@
 11. ***Firula***
     - Usado para que garantir que a carga começe no local previsto.   
 
-## Handshake   
+### Handshake   
 
 - Metodo pela qual dois dispositivos garantem que estão falando o mesmo protocolo e vão conseguir se entender.
 
-### Handshake Triplo:   
+#### Handshake Triplo:   
 
 - Esse handshake é muito comun e ocorre sempre que há interação entre duas máquinas para estabelecer uma conexão TCP
 ```
@@ -54,7 +54,7 @@ transmissor <-SYN/ACK- receptor
 transmissor --ACK-->>  receptor 
 ```
 
-### HS Quadruplo:  
+#### HS Quadruplo:  
 
 - Usado para encerrar as comunicações
 ```
@@ -76,7 +76,7 @@ transmissor <-ACK-- receptor
 - **CLOSE_WAIT**   - Conexão encerrada, mas o soquete ainda não foi liberado pela aplicação
 - **CLOSED**       - Conexão encerrada.   
 
-## UDP - User Datagram Protocol   
+### UDP - User Datagram Protocol   
 
 - Protocolo que não requer conexão, portanto, não possui o conceito de um ACK, a confirmação de recebimento. Com o UDP, basta definir uma porta e enviar o pacote.    
 
@@ -86,10 +86,18 @@ transmissor <-ACK-- receptor
 
 #### [Para saber mais sobre portas e ver uma lista de quais foram atribuídas a quais serviços](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)    
 
-## FIREWALL   
+### FIREWALL   
 
 - Dispositivo que bloqueia tráfego baseado em certos critérios, sendo críticos para proteção de redes, podendo operar em diversas camadas da rede podendo inspecionar tráfego da camada da aplicação e até mesmo bloquear tráfego de certos endereços de IP sendo mais comumente usados na camada do transporte. Estes geralmente possuem uma configuração que bloqueia tráfego para certas portas e permitindo à outras. ***Algumas vezes é um dispositivo de rede externo mas é melhor pensar nele como um programa que pode rodar em qualquer lugar.***
 
-## Aplication  
+### Aplication  
 
-- Permite que as aplicações se comuniquem entre si de modo que se compreendan
+- Permite que as aplicações se comuniquem entre si de modo que se compreendan. Nessa camada existem tantos protocolos que não da pra numerar todos, porque basicamente cada aplicação tem um protocolo que usa para se comunicar com o servidor; por exemplo, todos browsers usam o protocolo HTTP, ou *Hyper Text Transfer Protocol*. Basicament são muitas aplicações e muitos protocolos, mas todos precisam se comunicar de algum modo, e para tanto, decidiram por padronizar.  
+
+## OSI - Open Systems Interconnection   
+
+- Modelo de 7 camadas, igualmente importante, adicionando duas camadas entre a camada de transporte e aplicação, ***seção e apresentação***.
+    1. Seção
+        - Facilita a comunicação entre as aplicações e a camada de transporte; a parte do OS que pega o dado da camada de aplicação que foi desencapsulado de todas camadas abaixo e envia para a camada de apresentação.
+    2. Apresentação
+        - Responsável que o dado desencapsulado é compreendido propriamente pela aplicação em questão.
