@@ -75,10 +75,7 @@ transmissor <-ACK-- receptor
 - **FIN_WAIT**     - FIN enviaado mas não foi recebido ainda
 - **CLOSE_WAIT**   - Conexão encerrada, mas o soquete ainda não foi liberado pela aplicação
 - **CLOSED**       - Conexão encerrada.   
-
-### UDP - User Datagram Protocol   
-
-- Protocolo que não requer conexão, portanto, não possui o conceito de um ACK, a confirmação de recebimento. Com o UDP, basta definir uma porta e enviar o pacote.    
+   
 
 ### Porta Efemera  
 
