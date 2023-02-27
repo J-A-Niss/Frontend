@@ -74,4 +74,28 @@
 
 ### Zona DNS  
 
-- Tem finalidade permitir um controle mais fácil em varios níveis de um domínio. Basicamente usado para organizar melhor os endereços. As zonas são configuradas por meio de arquivos que atribuem todos registros de recursos para uma determinada zona específica, esse arquivo devendo contar um ***SoA ou Start of Authority, registro que atribui a zona e o nome do servidor que é autoritativo para ela***. 
+- Tem finalidade permitir um controle mais fácil em varios níveis de um domínio. Basicamente usado para organizar melhor os endereços. As zonas são configuradas por meio de arquivos que atribuem todos registros de recursos para uma determinada zona específica, esse arquivo devendo contar um ***SoA ou Start of Authority, registro que atribui a zona e o nome do servidor que é autoritativo para ela***.   
+
+## DHCP - Dynamic Host Configuration Protocol   
+
+- Protocolo na camada de aplicação que automatiza o processo de configuração do host em uma rede. Essencialmente permite que uma máquina consulte um servidor DHCP quando se conecta à uma rede e receba toda configuração de uma só vez. Apesar de ser da camada de aplicação, sua principal função é ajudar a configurar a propria camada de rede.   
+
+- **Alocação Dinâmica**
+    - IPs são disponibilizados à dispositivos clientes quando eles requisitam um, ou seja, o IP de uma máquina pode ser diferente sempre que se conecta à rede.  
+
+- **Alocaç. Automatica**
+    - Funciona similar à alocação dinâmica, exceto que o servidor DHCP registra quais endereços foram enviados a quais máquinas e tenta re-enviar o mesmo endereço para a mesma máquina caso possível   
+    
+- **Alocaç. Fixa**
+    - Exige uma lista de endereço MAC e seus endereços IP correspondentes   
+
+- **NTP - Network Time Protocol**
+    - Usado para manter os computadores em rede sincronizados   
+
+#### DHCP Discovery   
+
+- Processo pela qual um cliente configurado para usar DHCP tenta adquirir informação da rede; esse processo possui 4 passos:
+    1. Cliente envia uma mensagem de descoberta DHCP para a rede, já que a maquina não tem um IP e não conheçe o IP do servidor DHCP, ela cria uma mensagen de broadcast especial, o **DHCP escuta na porta 67** e a **mensagem de descoberta é enviada pela porta UDP 68**
+    2. Essa é encapsulada em um datagrama UDP com origem na porta 68 e destino na 67, depois isso é encapsulado em um datagrama IP com destino ao endereço 255.255.255.255 e origem 0.0.0.0. Essa mensagem é enviada a todo nó da rede local e caso haja um serv. DHCP presente, o mesmo recebe a mensagem
+    3. Então o serv. examina sua configuração para ver se há um IP disponível ao cliente, isso dependendo do tipo de **alocação** que foi configurado, essa resposta é enviada como uma DHCPOFFER para a porta 68, da porta 67, com IP destino de 255.255.255.255 e origem de seu proprio (do servidor) IP. Essa mensagem tambem alcança toda maquina da rede. A mensagem é marcada com o endereço MAC da máquina que enviou a mensagem
+    4. A mensagen é então respondida com um DHCPREQUEST, que basicamente diz "sim, quero o IP que voce ta oferencendo", e como um IP ainda não foi enviado, é enviada do IP 0.0.0.0.68 ao 255.255.255.255.67 e então o serv. responde com um DHCPack ou uma mensagem de confirmação, essa mensagem enviada a um IP 255.255.255.255 do IP original do servidor, novamente, reconhecendo que é a maquina certo pelo endereço MAC
