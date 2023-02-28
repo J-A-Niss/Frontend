@@ -18,4 +18,16 @@
 
 #### [Exaustão do IPv4](https://en.wikipedia.org/wiki/IPv4_address_exhaustion)
 
-- Basicamente não tem mais IPv4 disponível, e para circumvir esse problema, usa-se NAT para que dispositivos individuais não necessitem necessariamente de um IP para se conectar a internet.
+- Basicamente não tem mais IPv4 disponível, e para circumvir esse problema, usa-se NAT para que dispositivos individuais não necessitem necessariamente de um IP para se conectar a internet.   
+
+## [VPN - Virtual Private Network](https://pt.wikipedia.org/wiki/Rede_privada_virtual)   
+
+- Permite a extensão de uma rede local para um host que pode não operar na mesma rede local. É um protocolo de tunelamento, significa que elas viabilizam acesso a algo que não está disponível localmente. A maioria das VPNs funciona usando a seção payload da camada de transporte para transportar um payload criptografado que contém um segundo conjunto inteiro de pacotes: as camadas de rede, de transporte e de aplicação de um pacote destinado a atravessar a rede remota. Esse payload é transportado ao endpoint da VPN, na qual as outras camadas são descartadas, e o payload original é descriptografado deixando o servidor com as 3 camadas superiores do novo pacote.  
+
+- Requerem um procedimento de autenticação rigoroso para garantir que sejam acessados por computadores autorizados, sendo as VPN responsáveis por disseminar a **autenticação em dois fatores**; na qual mais que uma senha e login são necessários para autenticar um usuário.   
+
+- O mais importante é que as VPNs são uma tecnologia que usa túneis criptografados para permitir que um computador ou uma rede remota atue como se estivesse conectado a uma rede que não está fisicamente ligada a eles.  
+
+## [Proxy](https://pt.wikipedia.org/wiki/Proxy)  
+
+- Um servidor que age como um intermediário para requisições de clientes; solicitando recursos de outros servidores. Um cliente conecta-se ao servidor proxy, solicitando algum serviço, como um arquivo, conexão, página web ou outros recursos disponíveis de um servidor diferente, e o proxy avalia a solicitação como um meio de simplificar e controlar sua complexidade. 
