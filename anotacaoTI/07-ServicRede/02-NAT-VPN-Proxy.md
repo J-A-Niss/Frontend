@@ -26,7 +26,11 @@
 
 - Requerem um procedimento de autenticação rigoroso para garantir que sejam acessados por computadores autorizados, sendo as VPN responsáveis por disseminar a **autenticação em dois fatores**; na qual mais que uma senha e login são necessários para autenticar um usuário.   
 
-- O mais importante é que as VPNs são uma tecnologia que usa túneis criptografados para permitir que um computador ou uma rede remota atue como se estivesse conectado a uma rede que não está fisicamente ligada a eles.  
+- O mais importante é que as VPNs são uma tecnologia que usa túneis criptografados para permitir que um computador ou uma rede remota atue como se estivesse conectado a uma rede que não está fisicamente ligada a eles.   
+
+#### VPN Ponto a ponto   
+
+- Estabelece um tunel vpn entre dois locais, funciona parecido com vpn tradicional que usuários podem aparentar estarem conectados na mesma rede, mas difere no ponto que o tunelamento é tratado por dispositivos nos dois locais de modo que os proprios usuários não precisam estabalecer suas proprias conexões.   
 
 ## [Proxy](https://pt.wikipedia.org/wiki/Proxy)  
 
