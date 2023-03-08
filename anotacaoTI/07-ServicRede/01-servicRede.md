@@ -17,7 +17,15 @@
         - *Idem ao Cache*, porém esses executam uma solicitação de resolução de DNS completa
     3. Serv. de nome Raiz
     4. Serv. de nome TLD
-    5. Serv. de nome autoritativo   
+    5. Serv. de nome autoritativo    
+
+### Registro de Nomes   
+
+- Os nomes precisam se globalmente unicos, e para tanto, existem empresas dedicadas a manter um registro de nomes junto à ICANN, responsáveis por atribuir nomes de domínio público para organizações ou individuos. Esse registro é finito, sendo necessário renovar o registro caso contrário o nome se tornará disponpivel ao publico.
+
+#### Servidor DNS publico  
+
+- Servidores de nomes que podem ser usados por qualquer pessoa, gratuitamente, usar esse tipo de servidor é uma boa técnica para solucionar quaisquer problemas de resolução de nomes. Desses todos, o maior é a Level 3 e seu negócio essencialmente revolve em vender conectividade à rede deles para outros provedores que lidam direto com o consumidor. A maioria desses servidores estão disponíveis globalmente por meio do Anycast. ***Sempre se certifique que o servidor de nomes é confiável e tente usar os servidores fornecidos pelos provedores***  
 
 ### TTL - Time to Live   
 
