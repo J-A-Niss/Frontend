@@ -30,8 +30,13 @@
     - more                  - mostra todo conteudo do arquivo com um outro programa, dentro do shell. Enter avança uma linha por vez, espaço uma página e a tecla q encerra
     - -Head                 - mostra só o começo do arquivo
     - -Tail                 - mostra o final do arquivo
+    - Get-Alias 'comando'   - mostra qual o comando completo, ao invés do pseudonimo
+    - sls ou Select-String  - encontra palavras ou outras sequencias de caracteres e arquivos
+    - -Filter               - filtra resultados com base em um parametro, por exemplo '-Filter *.exe' para arquivos executáveis 
 
 ```
+
+#### [Mais sobre Powershell](https://github.com/PowerShell/PowerShell/blob/master/docs/learning-powershell/README.md)
       
 #### Caminhos
 - Pode ser relativo ou absoluto; relativo do ponto do diretório que se encontra, absoluto do ponto de vista que inclui TODO caminho, desde o drive até o diretório desejado:
@@ -56,5 +61,19 @@ relativo - \Frontend
     - clear                 - limpa a tela
     - -r                    - mesma função do -Recurse no powershell
     - mv                    - 'move' usado para mudar arquivo de lugar e renomear documento 'mv .\documento1.txt documento2.txt'
+    - cat                   - 'concatenate' visualiza o conteudo de um arquivo
+    - less                  - ironicamente funciona que nem o more no windows, mostrando todo conteudo do documento por meio de um outro programa dentro do shell
+    - /palavra              - dentro do comando 'less' isso pesquisa uma palavra específica
+    - q                     - dentro do comando 'less' sai do modo de analise de conteudo
+    - head                  - idem ao windows
+    - tail                  - idem ao windows
+    - grep                  - procura palavra dentro de arquivo
+    - echo                  - funciona como 'Write-Output' basicamente mostra o que ta sendo escrito com o teclado na tela
+    - $null                 - literalmente nulo|nada
+    - Get-Help about_redirection - traz mais informações sobre os comandos
+    - >>                    - redirecionador de acréscimo
+    - |                     - canaliza um comando a saída de um comando para outro
 
 ```
+
+### [Vim](https://www.vim.org/)
