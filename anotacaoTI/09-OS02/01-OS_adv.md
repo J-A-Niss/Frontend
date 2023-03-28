@@ -32,7 +32,12 @@
     - -Tail                 - mostra o final do arquivo
     - Get-Alias 'comando'   - mostra qual o comando completo, ao invés do pseudonimo
     - sls ou Select-String  - encontra palavras ou outras sequencias de caracteres e arquivos
-    - -Filter               - filtra resultados com base em um parametro, por exemplo '-Filter *.exe' para arquivos executáveis 
+    - -Filter               - filtra resultados com base em um parametro, por exemplo '-Filter *.exe' para arquivos executáveis
+    - Get-LocalUser         - Lista usuários da máquina
+    - Get-LocalGroups       - Lista grupos da máquina
+    - Get-LocalGroupMember  - Lista os membros de um grupo, como por exemplo: 'Get-LocalGroupMember Administradores'
+    - net                   - usado para criar usuários e alterar senhas; 'net user "nome" * /add' ou 'net user "nome" * /del' para deletar
+    - /?                    - traz mais informação sobre um comando usado 
 
 ```
 
@@ -45,7 +50,7 @@ absoluto - C:\Users\User\Desktop\Frontend
 relativo - \Frontend
 ```
    
-### Shell
+### [Powershell](https://www.powershellgallery.com/)
 - CLI do Linux. Tambem não compreende espaços, use '' ou \
 ```
     - ls                    - lista diretórios, como por exemplo "ls ~\Desktop"
@@ -73,7 +78,39 @@ relativo - \Frontend
     - Get-Help about_redirection - traz mais informações sobre os comandos
     - >>                    - redirecionador de acréscimo
     - |                     - canaliza um comando a saída de um comando para outro
+    - sudo ou superuserdo   - usa privilégio Root no linux para fazer meio que qualquer coisa
+    - passwrd -e 'user'     - força a expiração da senha do usuário ao logar na conta, fazendo com que o usuário precise troca-la
+    - sudo useradd 'nome'   - adiciona novo usuário 
+    - sudo userdel 'nome'   - remove o usuário
+    - dpkg                  - debian package
+    - -i                    - install, flag usada no final, por exemplo: sudo dpkg -i 'pactoe'.deb
+    - -r                    - remove, flag que remove um pacote, por exemplo: sudo dpkg -r 'pacote'
+    - 7z e 'arquivo.xxx'    - extrai o arquivo por meio do 7zip
 
-```
+```  
 
-### [Vim](https://www.vim.org/)
+- Em Linux o primeiro usuário é o considerado Root, ou 'superuser', esse é o que possui todos privilégios da máquina, parecido com admin. 
+
+### [Vim](https://www.vim.org/)   
+
+## Users
+- Usuários se separam em dois:
+    1. *Normal ou usuário*; este possui restrições quanto ao uso da máquina
+    2. *Admins*; este possui acesso irrestrio quanto ao uso da máquina    
+
+### Dominio Windows
+- Rede de computadores, usuários e arquivos adicionados à um banco de dados central. Admins pode ver essas contas e computadores de qualquer máquina do domínio.   
+
+### Permissões
+#### Windows
+- No Windows, permissões para arquivos e diretórios são concedidas com [ACLs, ou Access Control Lists](https://learn.microsoft.com/pt-br/windows/win32/secauthz/access-control-lists?redirectedfrom=MSDN) e DACLs, Descretionary Access Control Lists. SACLs ou System Access Control Logs tambem são usados para dar permissões, na qual fica registrado no log de eventos quando um acesso é feito. **Basicamente ACLs decidem quem pode fazer "o oque"**   
+- [Permissões especiais](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732880(v=ws.11)?redirectedfrom=MSDN)
+
+#### Linux
+- Tem 3 permissôes:
+    1. **Ler** permite que veja o conteudo do arquivo/pasta            | r
+    2. **Escrever** permite escrever/reescrever conteudo de arq/pasta  | w
+    3. **Executar** permite executar conteudo de arq/pasta             | x
+- Uma  **SetUID**, permite executar arquivos com permissão root        | s
+- SetGID permite que o grupo execute o arquivo                         | tty
+- Sticky Bit permite que possam alterar arq/pasta mas não possa deletar nada 
