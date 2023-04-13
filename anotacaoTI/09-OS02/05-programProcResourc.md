@@ -30,4 +30,15 @@
     - kill -CONT 'PID' | retoma o processo 
 
 #### [Gerenc Recursos](https://en.wikipedia.org/wiki/Load_(computing))
-- O comando 'top' mostra os principais processos que mais estão usando recursos na máquina, tambem mostra um panorama de todas tarefas em execução ou inativas, tambem mostrando uso de CPU, Memoria *etc.* Outro comando importante é o '*uptime*' que mostra hora, tempo atual de uso, quantos usuários estão logados e a média de carga que mostra uma média na carga da CPU em intervalos de 1, 5 e 15 minutos. Outo comando importante é o '*lsof*' que lista arquivos abertos e quais processos os estão usando.
+- O comando 'top' mostra os principais processos que mais estão usando recursos na máquina, tambem mostra um panorama de todas tarefas em execução ou inativas, tambem mostrando uso de CPU, Memoria *etc.* Outro comando importante é o '*uptime*' que mostra hora, tempo atual de uso, quantos usuários estão logados e a média de carga que mostra uma média na carga da CPU em intervalos de 1, 5 e 15 minutos. Outo comando importante é o '*lsof*' que lista arquivos abertos e quais processos os estão usando.   
+
+## Registros
+- Usado pelo OS para marcar eventos. Eventos podendo ser literalmente qualquer coisa que acontece ao sistema, de desligamentos à atualizações. Esses registros ocupam espaço por serem informação e portanto existe um sistema de rotação desses logs que deleta os mais antigos para fazer espaço para os mais novos, por meio do log rotate.
+#### Visualizador Windows
+- Usado pelo Windows para marcar os eventos que ocorrem.   
+
+#### Visualizador Linux
+- O Linux não possui a mesma GUI, os logs são registrados no */var/log*, com o comando
+```
+ls /var/log | a lista os logs dos eventos fica gravado aqui
+```

@@ -113,4 +113,8 @@ relativo - \Frontend
     3. **Executar** permite executar conteudo de arq/pasta             | x
 - Uma  **SetUID**, permite executar arquivos com permissão root        | s
 - SetGID permite que o grupo execute o arquivo                         | tty
-- Sticky Bit permite que possam alterar arq/pasta mas não possa deletar nada 
+- Sticky Bit permite que possam alterar arq/pasta mas não possa deletar nada    
+
+## Gerar Imagen
+- Signifca formatar uma máquina copiando de outra máquina. Isso pode ser feito de varios modos. Um dos modos é clonagem disco, que essencialmente copia um disco em outro e um dos softwares mais populares para isso é o clonezilla, software de codigo aberto que pode ser usado para fazer backup e restaurar uma ou varias máquinas, outra popular é a *Symantec Ghost*. Diferentes ferramentes usam diferentes métodos, um desses é [clonagem disco-a-disco](https://en.wikipedia.org/wiki/Comparison_of_disk_cloning_software), onde se conecta um HD externo à máquina que quiser clonar.
+- Em Linux, uma ferramenta é o [*dd*, comando usado para copiar arquivos](https://man7.org/linux/man-pages/man1/dd.1.html).
