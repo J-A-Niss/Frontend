@@ -7,6 +7,8 @@
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API   
 
+- https://www.figma.com/file/XswYuQJz5RRCyUUfQwFbnh/Website-Landing-Page?type=design&node-id=0-1&mode=design  
+
 
 ##### Lembretes:   
 - npx http-server

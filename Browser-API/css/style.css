@@ -7,6 +7,7 @@
 html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 body {
@@ -14,7 +15,8 @@ body {
 }
 
 section {
-    margin: 4rem auto 8rem;
+    margin: 2rem auto 4rem;
+    margin-bottom: 1px solid;
 }
 
 h2 {
@@ -27,7 +29,6 @@ h2 {
 }
 
 .parent {
-    color: rgb(26, 26, 26);
     display: flex;
     font-family: sans-serif;
     font-weight: bold;
@@ -41,18 +42,18 @@ h2 {
 }
 
 .draggable {
-    border: 2px solid #141414;
+    border: 2px dashed #838383;
     background-color: #ddd;
     cursor: grab;
     font-weight: normal;
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding: 1rem;
-    border-radius: 10%;
+    border-radius: 1%;
 }
 
 .dropzone {
-    border: 2px dashed #ddd;
+    border: 2px solid #353535;
     background-color: #eee;
     flex-basis: 100%;
     flex-grow: 1;
@@ -72,14 +73,24 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #333;
-        color: #fff;
+        background-color: #444444;
+        color: #d1d1d1;
     }
 }
 
 @media (prefers-color-scheme: light) {
     body {
         background-color: rgb(209, 209, 209);
-        color: rgb(69, 69, 110);
+        color: rgb(45, 45, 75);
     }
+}
+
+button {
+    padding: .1em;
+    font-size: large;
+    font-weight: bold;
+}
+
+.lorem {
+    font-style: italic;
 }

@@ -1,4 +1,4 @@
-function getNotifications( ){
+function getNotifications(){
     if( !("Notification" in window)) {
         console.log('Navegador não suporta notificações');
 
