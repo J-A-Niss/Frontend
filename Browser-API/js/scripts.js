@@ -25,14 +25,6 @@ function drop(event){
 
 }
 
-// window.addEventListener('DOMContentLoaded', () => {
-
-//     let drag = document.querySelector('.draggable');
-
-//     drag.addEventListener('dragstart', dragStart);
-
-// })
-
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
